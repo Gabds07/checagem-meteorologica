@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap");
+:root {
+    font-family: "DM Sans", sans-serif;
+    color: #252940;
+    background: #f5f3f0;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    --bg: #f5f3f0;
+    --surface: #fffefd;
+    --text: #252940;
+    --muted: #7b7f91;
+    --line: #e7e4e1;
+    --soft: #f5f4f8;
+    --accent: #5c5ab8;
+    --accent-strong: #7372d1;
+    --accent-soft: #eeedfb;
+    --shadow: 0 14px 36px rgba(42, 39, 78, 0.065);
+}
+:root[data-theme="dark"] {
+    color-scheme: dark;
+    --bg: #171923;
+    --surface: #222431;
+    --text: #f0eff8;
+    --muted: #a4a4b7;
+    --line: #38394a;
+    --soft: #2a2b3b;
+    --accent: #aaa5ff;
+    --accent-strong: #c1bdff;
+    --accent-soft: #35334f;
+    --shadow: 0 15px 38px rgba(0, 0, 0, 0.22);
+}
+* {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 82px;
+}
+body {
+    margin: 0;
+    min-width: 360px;
+    min-height: 100vh;
+    background: var(--bg);
+    color: var(--text);
+    transition:
+        background 0.2s,
+        color 0.2s;
+}
+button,
+input,
+select {
+    font: inherit;
+}
+button,
+a,
+select,
+input {
+    -webkit-tap-highlight-color: transparent;
+}
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible {
+    outline: 3px solid color-mix(in srgb, var(--accent) 45%, transparent);
+    outline-offset: 2px;
+}
+a {
+    color: inherit;
+}
